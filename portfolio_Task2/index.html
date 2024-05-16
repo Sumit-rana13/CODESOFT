@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Websites</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/16eca24285.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ############# header section ############### -->
+    <div id="header">
+        <div class="container">
+           <nav>
+                <h2 class="logo"><span>S</span>umit.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+           </nav>
+           <div class="header-text">
+            <p><i class="fa-solid fa-globe"></i>Frontend Web Developer </p>
+            <h1>Hello, i am <span>Sumit</span>. <br>i design and build user interfaces</h1>
+            <p>I'm here to create meaningful lasting relationships with my clients</p>
+           </div>
+        </div>
+    </div>
+
+     <!-- #################### About section ##################  -->
+
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/sumit.jpg" alt="pic" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hii , My name is Sumit Rana . I'm a Frontend Web Developer with a passion for web design and development. <br>
+                        I aspire toward a career that will allow me to enhance my creativity through crafting beautiful software  </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab " id="skills">
+                        <ul>
+                            <li><span>Languages </span><br>JavaScript, SQL, Java, Html</li>
+                            <li><span>Framework</span><br>CSS Tailwind, ReactJS, Redux, Git, GitHub, flutter, FireBase, Appwrite</li>
+                            <li><span>Soft Skills</span><br>Flexible and Adaptable, Attention to Detail,<br>
+                                
+                                Organization and Time Management,<br>
+                                Microsoft Office </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Web Developer</span><br> Web app development</li>
+                            <li><span>App Developer</span><br>building Android/ios apps</li>
+                           
+                        </ul>
+                    </div> -->
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Tula's Institute</span><br> B.tech Computer Science and Engineer | CGPA: 7.6</li>
+                            <li><span>Sri Sai Baba International Public School</span><br>PCM with Computer Science | CGPA: 7.8</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ############### services ##################  -->
+     <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a passionate beginner in the field of full stack development, I am excited to offer my web design services. With a focus on custom website design, responsive design, UI design, and basic website maintenance
+                         <br>
+                    I am eager to expand my skills and learn new technologies to enhance my capabilities. With a portfolio showcasing my projects and a dedication to continuous learning and growth, I am ready to take on new challenges and collaborate with clients to bring their visions to life.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Welcome to my portfolio! As a beginner full stack developer with a keen interest in UI/UX design, I showcase my proficiency in creating intuitive and visually appealing user interfaces. With services encompassing wireframing, prototyping, visual design, and branding integration, I strive to elevate user experiences while maintaining brand consistency 
+                        <br>
+                    Additionally, I offer UX design services such as user research, information architecture, usability testing, and user flow design to ensure seamless navigation and interaction
+                    </p>
+                    <a href="https://medium.com/@iamjesseshow/ux-vs-us-7431dd859418">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p> As a beginner full stack developer delving into app design, I am passionate about creating mobile applications that prioritize both functionality and user experience
+                        <br>
+                    I am dedicated to delivering visually appealing and user-centric mobile solutions. Additionally, my understanding of mobile development basics and willingness to collaborate with developers ensure seamless implementation of designs into fully functional applications
+                    <br>
+                    Through continuous learning and growth, I am committed to refining my app design skills and delivering impactful solutions for clients.
+                    </p>
+                    <a href="https://dev.to/hellonehha/what-is-application-design-53fa">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- --------------- Portfolio ------------------ -->
+     
+     <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/Todo.jpg" alt="work">
+                        <div class="layer">
+                            <h3>ToDo App</h3>
+                            <p>Created and deployed a Todo application using Vite React, integrating the Context API to streamline
+                                state management and enhance component communication, resulting in a 20% increase in productivity and a 15% improvement in user satisfaction. </p>
+                            <a href="https://todocontextapi.netlify.app/"></i>link</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/chat.jpg" alt="work">
+                       <div class="layer">
+                            <h3>Password Generator</h3>
+                            <p>Developed a password generator application using Vite React, leveraging modern React hooks for
+                                state management, resulting in a 25% increase in development efficiency and code maintainability</p>
+                            <a href="https://generatorpassword01.netlify.app/"><i class="fa-solid fa-square-up-right"></i>link</a>
+                       </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/plant.jpg" alt="work">
+                         <div class="layer">
+                            <h3>Plant Disease detection</h3>
+                            <p>Led a project focused on empowering farmers with timely and accurate identification of plant diseases, resulting in improved crop management and substantial reduction in agricultural losses</p>
+                            <a href="https://github.com/Sumit-rana13/PlantDiseaseDetection.git"><i class="fa-solid fa-square-up-right"></i>link</i></a>
+                         </div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+     </div>
+
+     <!-- ----------- contact -------------  -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <p><i class="fa-solid fa-envelope "></i>  sr8218648@gmail.com</p> -->
+                    <!-- <p><i class="fa-solid fa-phone"></i> +91 8218648005</p> -->
+                    <div class="social-icon">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/sumit-rana-440459204/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sumit-rana13"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="cvButton">
+                <!-- <button class="btn btn2"> <a href="./img/cv.pdf"  download>Download Resume</a></button> -->
+                <a href="./img/cv.pdf">Download Resume</a>
+                
+            </div>
+        </div>
+       
+     </div>
+     
+
+     <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Sumit. Made with <i class="fa-solid fa-heart"></i> By Me</p>
+     </div>
+
+
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyOwXDuUFUg7-PcdMr2joGsbp01-4cHa8yFkQiPH5NhewPvFMRs4Qlr2YzHN2T6DZ3Dxw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        var msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => msg.innerHTML = "Message sent Sucessfully !!!!",
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            )
+            form.reset()
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+</html>
